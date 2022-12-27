@@ -1,0 +1,82 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.KHACHHANG>
+
+@{
+    ViewBag.Title = "ShowAllKH";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string thongbao = Session["TB"] as string;
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">DANH SÁCH KHÁCH HÀNG</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã khách hàng
+        </th>
+        <th>
+            Tên khách hàng
+        </th>
+        <th>
+            Giới tính
+        </th>
+        <th>
+            Sđt
+        </th>
+        <th>
+            Tên tài khoản
+        </th>
+        <th>
+            Mật khẩu
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENNKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHAI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDTKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENTAIKHOAN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MATKHAUTK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIACHIKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.ActionLink("Cập nhật", "EditKH", new { id = item.MAKH }) |
+            @Html.ActionLink("Xóa", "DeleteKH", new { id = item.MAKH })
+        </td>
+    </tr>
+}
+
+</table>
+<p style="text-align:center">
+    <a href="/CaPhe/AddKH"><button class="btn btn-secondary" style="margin-left:900px">Thêm khách hàng</button></a>
+</p>
+@if (thongbao != null && thongbao != string.Empty)
+{
+    <script type="text/javascript">
+        window.alert("@thongbao")
+    </script>
+}

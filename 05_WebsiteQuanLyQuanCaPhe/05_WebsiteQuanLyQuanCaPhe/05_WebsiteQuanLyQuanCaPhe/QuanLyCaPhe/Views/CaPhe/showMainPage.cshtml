@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "showMainPage";
+    Layout = "~/Views/Shared/Client.cshtml";
+}
+
+<style>
+    img{
+        padding-bottom:30px;
+        padding-top:30px;
+        fit-position:center;
+    }
+    a{
+        text-decoration:none;
+        color:black;
+    }
+</style>
+<div class="container-fluid">
+    <img src="~/Images/main1.png" />
+    <img src="~/Images/main2.png" />
+    <img src="~/Images/main3.png" />
+    <img src="~/Images/main4.png" />
+    <img src="~/Images/main5.png" />
+    @*@Html.ActionLink("Xem menu", "ShowSanPham", "CaPhe", new { }, new { @class = "btn btn-primary w-25" })*@
+</div>

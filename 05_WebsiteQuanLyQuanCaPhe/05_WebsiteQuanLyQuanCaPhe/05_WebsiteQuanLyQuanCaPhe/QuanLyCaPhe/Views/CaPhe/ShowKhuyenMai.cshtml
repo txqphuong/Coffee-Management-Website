@@ -1,0 +1,33 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.KHUYENMAI>
+
+@{
+    ViewBag.Title = "ShowKhuyenMai";
+    Layout = "~/Views/Shared/Client.cshtml";
+}
+<!--Bootstrap 4-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+
+<div class="container">
+    <h1 style="color:brown; font-weight: bold; text-align: center; font-family: 'Times New Roman'; ">SỰ KIỆN - CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+        <div class="row">
+            @{
+                foreach (var item in Model)
+                {
+                    <div class="col-4">
+                        <p title="@item.TenSuKien" style="color:red">@item.TenSuKien</p>
+                    </div>
+                    <div class="col-8">
+                        <p title="@item.NoiDung" style="font-weight:bold">@item.NoiDung</p>
+                        <p>@item.TangSP</p>
+                        <p>@item.NgayBD</p>
+                        <p>@item.NgayKT</p>
+                    </div>
+                }
+}
+        </div>
+</div>
+

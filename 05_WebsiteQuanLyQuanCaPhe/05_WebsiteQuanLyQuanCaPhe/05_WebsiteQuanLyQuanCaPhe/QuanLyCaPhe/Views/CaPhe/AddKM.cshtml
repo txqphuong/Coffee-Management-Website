@@ -1,0 +1,97 @@
+﻿@model QuanLyCaPhe.Models.KHUYENMAI
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddKM</title>
+</head>
+<body>
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+                <h1 style="color: white; font-weight: bold; font-family: 'Times New Roman'; text-align: center">THÊM CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+                <div>
+                    <hr />
+                    <div style="margin-left:20px;">
+                        @Html.ValidationSummary(true)
+
+                        @*<div class="form-group">
+                <h3 style="font-family:'Times New Roman'">Mã khuyến mãi</h3>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MaKM)
+                    @Html.ValidationMessageFor(model => model.MaKM)
+                </div>
+            </div>*@
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tên sự kiện</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TenSuKien)
+                                @Html.ValidationMessageFor(model => model.TenSuKien)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Nội dung</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NoiDung)
+                                @Html.ValidationMessageFor(model => model.NoiDung)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tặng sản phẩm</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TangSP)
+                                @Html.ValidationMessageFor(model => model.TangSP)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Ngày bắt đầu</h3>
+                            <div class="col-md-10">
+                                <input type="date" id="NGAYBD" name="NGAYBD">
+                                @Html.ValidationMessageFor(model => model.NgayBD)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Ngày kết thúc</h3>
+                            <div class="col-md-10">
+                                <input type="date" id="NGAYKT" name="NGAYKT">
+                                @Html.ValidationMessageFor(model => model.NgayKT)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tỉ lệ khuyến mãi</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TiLeKM)
+                                @Html.ValidationMessageFor(model => model.TiLeKM)
+                            </div>
+                        </div>
+
+                        <center>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Thêm khuyến mãi" class="btn btn-info" />
+                                    @Html.ActionLink("Quay lại", "ShowAllKM")
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    </div>
+            </div>
+            </div>
+    }
+</body>
+</html>

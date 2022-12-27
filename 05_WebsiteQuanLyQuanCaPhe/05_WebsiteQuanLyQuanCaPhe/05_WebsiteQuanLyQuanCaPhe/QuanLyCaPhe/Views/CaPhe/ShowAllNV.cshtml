@@ -1,0 +1,74 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.NHANVIEN>
+
+@{
+    ViewBag.Title = "ShowAllNV";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string thongbao = Session["TB"] as string;
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">DANH SÁCH NHÂN VIÊN</h1>
+<table class="table">
+    <tr>
+        <th>
+            Mã nhân viên
+        </th>
+        <th>
+            Tên nhân viên
+        </th>
+        <th>
+            Giới tính
+        </th>
+        <th>
+            Ngày sinh
+        </th>
+        <th>
+            Sđt
+        </th>
+        <th>
+            Chức vụ
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MANV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TENNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GIOITINH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGAYSINH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CHUCVU)
+            </td>
+            <td>
+                @Html.ActionLink("Cập nhật", "EditNV", new { id = item.MANV }) |
+                @Html.ActionLink("Xóa", "DeleteNV", new { Ma = item.MANV })
+            </td>
+        </tr>
+    }
+</table>
+<p style="text-align:right">
+    <p style="text-align:right">
+        <a href="/NhanVien/Show5NhanVien"><button class="btn btn-secondary" style="margin-left:900px">Hiển thị 5 nhân viên</button></a><br /><br />
+        @*@Html.ActionLink("Them NV", "AddNV")*@
+    </p>
+    <a href="/CaPhe/AddNV"><button class="btn btn-secondary" style="margin-left:900px">Thêm nhân viên</button></a><br /><br />
+    @*@Html.ActionLink("Them NV", "AddNV")*@
+</p>
+
+@if(thongbao != null &&  thongbao != string.Empty){
+    <script type="text/javascript">
+        window.alert("@thongbao")
+    </script>
+}

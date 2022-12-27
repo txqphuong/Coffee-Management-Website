@@ -1,0 +1,83 @@
+﻿@model QuanLyCaPhe.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "EditNV";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+            <h1 style="color: white; font-weight: bold; text-align: center; font-family: 'Times New Roman'; ">CHỈNH SỬA THÔNG TIN NHÂN VIÊN</h1>
+            <div>
+                <hr />
+                <div style="margin-left: 20px">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Mã nhân viên</h4>
+                        <input name="MANV" value="@Model.MANV" readonly="readonly" />
+                        <div class="col-md-10">
+                            @Html.ValidationMessageFor(model => model.MANV, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Tên nhân viên</h4>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TENNV, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.TENNV, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Giới tính</h4>
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.GIOITINH, new List<SelectListItem> { new SelectListItem { Text = "Nam", Value = "Nam", Selected = true }, new SelectListItem { Text = "Nữ", Value = "Nữ" } })
+                            @Html.ValidationMessageFor(model => model.GIOITINH)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Ngày sinh</h4>
+                        <div class="col-md-10">
+                            <input name="NGAYSINH" value="@Model.NGAYSINH"/>
+                            @Html.ValidationMessageFor(model => model.NGAYSINH, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Sđt</h4>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h4 style="font-family:'Times New Roman'">Chức vụ</h4>
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.CHUCVU, new List<SelectListItem> { new SelectListItem { Text = "NV Partime", Value = "NV Partime", Selected = true }, new SelectListItem { Text = "NV Fulltime", Value = "NV Fulltime" } })
+                            @Html.ValidationMessageFor(model => model.CHUCVU)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Save" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ShowAllNV")
+</div>

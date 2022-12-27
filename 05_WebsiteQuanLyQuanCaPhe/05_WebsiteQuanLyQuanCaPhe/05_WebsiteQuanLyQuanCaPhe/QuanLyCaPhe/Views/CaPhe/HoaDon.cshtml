@@ -1,0 +1,68 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.HOADON>
+
+@{
+    ViewBag.Title = "HoaDon";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string thongbao = Session["TB"] as string;
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">HÓA ĐƠN</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã hóa đơn
+        </th>
+        <th>
+            Ngày bán
+        </th>
+        <th>
+            Tổng tiền
+        </th>
+        <th>
+            Số bàn
+        </th>
+        <th>
+            Tên khách hàng
+        </th>
+        <th>
+            Tên nhân viên
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGAYBAN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TONGTIEN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOBAN)
+            </td>
+
+            <td> @Html.DisplayFor(modeItem => item.KHACHHANG.TENNKH)</td>
+            <td> @Html.DisplayFor(modeItem => item.NHANVIEN.TENNV)</td>
+
+            <td>
+                <a href="@Url.Action("XemChiTietHoaDon", "CaPhe", new { id = item.MAHD })" style="text-decoration:none; margin-top: 0px"> Xem chi tiết</a>
+            </td>
+
+        </tr>
+    }
+
+</table>
+<center><h4>Tổng số hóa đơn: @ViewBag.SL</h4></center>
+<a href="/CaPhe/Create"><button class="btn btn-secondary" style="margin-left:900px">Tạo hóa đơn mới</button></a>
+@if (thongbao != null && thongbao != string.Empty)
+{
+    <script type="text/javascript">
+        window.alert("@thongbao")
+    </script>
+}

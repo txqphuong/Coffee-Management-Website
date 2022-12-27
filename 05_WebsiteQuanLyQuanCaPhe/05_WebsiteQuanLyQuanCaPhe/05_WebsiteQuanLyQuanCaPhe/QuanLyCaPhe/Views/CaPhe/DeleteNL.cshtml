@@ -1,0 +1,80 @@
+﻿@model QuanLyCaPhe.Models.NGUYENLIEU
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Xóa nguyên liệu</title>
+</head>
+<body>
+    <h3>Bạn có muốn xóa nguyên liệu này?</h3>
+    <div>
+        <h4>BẢNG NGUYÊN LIỆU</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MaNL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MaNL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TenNL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TenNL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SoLuongCon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SoLuongCon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DVT)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DVT)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DonGia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DonGia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HanSD)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HanSD)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "ShowAllNL")
+            </div>
+        }
+    </div>
+</body>
+</html>

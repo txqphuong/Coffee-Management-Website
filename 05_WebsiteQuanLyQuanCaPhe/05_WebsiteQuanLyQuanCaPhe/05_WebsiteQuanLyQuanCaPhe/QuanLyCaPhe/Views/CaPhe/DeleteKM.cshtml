@@ -1,0 +1,88 @@
+﻿@model QuanLyCaPhe.Models.KHUYENMAI
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DeleteKM</title>
+</head>
+<body>
+    <h3>Bạn có muốn xóa khuyến mãi này?</h3>
+    <div>
+        <h4>BẢNG KHUYẾN MÃI</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MaKM)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MaKM)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TenSuKien)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TenSuKien)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NoiDung)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TangSP)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TangSP)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NgayBD)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NgayBD)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NgayKT)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NgayKT)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TiLeKM)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TiLeKM)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "ShowAllKM")
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.NGUYENLIEU>
+
+@{
+    ViewBag.Title = "ShowAllNL";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string thongbao = Session["TB"] as string;
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">NGUYÊN LIỆU</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã nguyên liệu
+        </th>
+        <th>
+            Tên nguyên liệu
+        </th>
+        <th>
+            Số lượng còn
+        </th>
+        <th>
+            Đơn vị tính
+        </th>
+        <th>
+            Đơn giá
+        </th>
+        <th>
+            Hạn sử dụng
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaNL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongCon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DVT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HanSD)
+        </td>
+        <td>
+            @Html.ActionLink("Cập nhật", "EditNL", new { ID = item.MaNL }) |
+            @Html.ActionLink("Xóa", "DeleteNL", new { MaNl = item.MaNL })
+        </td>
+    </tr>
+}
+
+</table>
+<a href="/CaPhe/AddNL"><button class="btn btn-secondary" style="margin-left:900px">Thêm nguyên liệu</button></a><br /><br />
+@if (thongbao != null && thongbao != string.Empty)
+{
+    <script type="text/javascript">
+        window.alert("@thongbao")
+    </script>
+}

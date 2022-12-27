@@ -1,0 +1,45 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.GioHang>
+
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/Client.cshtml";
+}
+
+<!--cart-->
+<div id="myCart" class="cart">
+    <h2 class="cart-title">
+        Your cart
+    </h2>
+    <!--content-->
+    @foreach (var i in Model)
+    {
+        <div class="cart-content">
+            <div class="cart-box">
+                <img src="~/Images/@i.HinhAnh" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">
+                        @i.TenSanPham
+                    </div>
+                    <div class="cart-price">@i.Gia VND</div>
+                    <input type="number" class="cart-quantity" value="1" />
+                </div>
+            <!--remove cart-->
+            <i class='bx bx-trash cart-remove'></i>
+            </div>
+        </div>
+    }
+        
+    <!--total-->
+        <div class="total">
+            <div class="total-title">
+                Total
+            </div>
+            <div class="total-price">
+                0 VND
+            </div>
+        </div>
+    <!--buy button-->
+        <button type="button" class="btn-buy">Buy Now</button>
+    <!--close cart-->
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>  

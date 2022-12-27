@@ -1,0 +1,92 @@
+﻿@model QuanLyCaPhe.Models.SANPHAM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <title>Cập nhật</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+                <h1 style="color: white; font-weight: bold; text-align: center; font-family: 'Times New Roman'; ">CẬP NHẬT SẢN PHẨM</h1>
+                <div>
+                    <hr />
+                    <div style="margin-left: 20px">
+                        @Html.ValidationSummary(true)
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Mã sản phẩm</h4>
+                            <div class="col-md-10">
+                                <input name="MaSP" value="@Model.MASP" readonly="readonly" />
+                                @Html.ValidationMessageFor(model => model.MASP)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Mã loại</h4>
+                            <div class="col-md-10">
+                                <input name="MaLoai" value="@Model.MALOAI" readonly="readonly" />
+                                @Html.ValidationMessageFor(model => model.MALOAI)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Tên sản phẩm</h4>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TENSP)
+                                @Html.ValidationMessageFor(model => model.TENSP)
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Giá bán</h4>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.GIABAN)
+                                @Html.ValidationMessageFor(model => model.GIABAN)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Hình ảnh</h4>
+                            <div class="col-md-10">
+                                <img src="/Images/@Model.HINHANH" width="200px" height="200px" />
+                                @Html.TextBoxFor(model => model.HINHANH, new
+                                            {
+                                                type = "file"
+                                            }
+                                            )
+                            </div>
+                        </div>
+                        <center>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Cập nhật" class="btn btn-info" style="background-color:green;" />
+                                    @Html.ActionLink("Quay lại", "ThucDon")
+                                </div><br />
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+﻿@using QuanLyCaPhe.Models
+@{
+    Layout = null;
+}
+@model User
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="~/Content/Login.css">
+</head>
+
+<style>
+    .form-div {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        background-color: white;
+    }
+</style>
+<body>
+    @Html.ValidationSummary(true)
+    <div class="container">
+        @using (Html.BeginForm("ManagerLogin", "CaPhe", FormMethod.Post, new { @class = "form-div" }))
+        {
+            <div class="login-left">
+                <div class="login-header">
+                    <h1>Welcome to Grinders Coffee</h1>
+                    <p>Please login to use our platform</p>
+                </div>
+                <div class="login-form">
+                    <div class="login-form-content">
+                        <div class="form-item">
+                            <label for="username">Enter your username</label>
+                            @*<input type="text" id="username">*@
+                            @Html.TextBoxFor(model => model.Username, new { @class = "form-control", id = "username" })
+                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Enter password</label>
+                            @*<input type="password" id="password">*@
+                            @Html.TextBoxFor(model => model.Password, new { @class = "form-control", id = "password", type = "password" })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            <p class="text-danger">@ViewBag.Error</p>
+                        </div>
+                        <div class="form-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remembermeCheckbox" checked>
+                                <label for="'remembermeCheckbox" id="checkboxLabel">Remember me</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Sign in" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="login-right">
+                <img src="~/Images/manager.png">
+            </div>
+        }
+    </div>
+</body>
+</html>

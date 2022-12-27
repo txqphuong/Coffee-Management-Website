@@ -1,0 +1,192 @@
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Helpers.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Mvc.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Razor.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Razor.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Helpers.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\bin\System.Web.Mvc.xml
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Helpers.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Mvc.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Razor.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Razor.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Helpers.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\bin\System.Web.Mvc.xml
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+D:\BÀI TẬP\BÀI TIỂU LUẬN\LTWEB\DoAn\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Helpers.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Mvc.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Razor.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Razor.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Helpers.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\System.Web.Mvc.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\EntityFramework.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\EntityFramework.xml
+E:\Nam 3\LTWeb\DoAn\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\EntityFramework.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Helpers.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Mvc.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\EntityFramework.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Helpers.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\QuanLyCaPhe\bin\System.Web.Mvc.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\EntityFramework.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Helpers.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Mvc.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Razor.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\EntityFramework.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Razor.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Helpers.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\bin\System.Web.Mvc.xml
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+C:\Users\dohue\Downloads\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\EntityFramework.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Helpers.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Mvc.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\EntityFramework.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Helpers.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Mvc.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\Newtonsoft.Json.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Net.Http.Formatting.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Http.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Http.WebHost.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\Newtonsoft.Json.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Net.Http.Formatting.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Http.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\Backend\Backend\QuanLyCaPhe\bin\System.Web.Http.WebHost.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\Newtonsoft.Json.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Net.Http.Formatting.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Helpers.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.WebHost.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Mvc.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\Newtonsoft.Json.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Net.Http.Formatting.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.WebHost.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Helpers.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Mvc.xml
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+C:\Users\Xuan Quynh Phuong\OneDrive - Ho Chi Minh city University of Food Industry\Desktop\07_WebsiteQuanLyQuanCaPhe\07_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.dll.config
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\QuanLyCaPhe.pdb
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.SqlServer.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\Newtonsoft.Json.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Net.Http.Formatting.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Helpers.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.WebHost.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Mvc.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Razor.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Razor.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\EntityFramework.SqlServer.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\Newtonsoft.Json.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Net.Http.Formatting.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Http.WebHost.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Razor.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Deployment.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Webpages.Razor.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Helpers.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\bin\System.Web.Mvc.xml
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.csprojResolveAssemblyReference.cache
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.dll
+E:\Nam 3\LTWeb\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\05_WebsiteQuanLyQuanCaPhe\QuanLyCaPhe\obj\Debug\QuanLyCaPhe.pdb

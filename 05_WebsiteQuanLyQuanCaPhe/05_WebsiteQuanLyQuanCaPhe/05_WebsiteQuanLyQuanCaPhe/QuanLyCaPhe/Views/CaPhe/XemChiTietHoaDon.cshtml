@@ -1,0 +1,57 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.CHITIETHD>
+
+@{
+    ViewBag.Title = "XemChiTietHoaDon";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">CHI TIẾT HÓA ĐƠN</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã hóa đơn
+        </th>
+        <th>
+            Mã sản phẩm
+        </th>
+        <th>
+            Số lượng
+        </th>
+        <th>
+            Thành tiền
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.MASP)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.MAHD)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.MASP)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.SOLUONG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.THANHTIEN)
+            </td>
+            <td>
+                @Html.ActionLink("Cập nhật", "UpdateCTHD", new { id = item.MASP }) |
+                @Html.ActionLink("Xem chi tiết", "XemChiTietSanPham", new { id = item.MASP }) |
+                @Html.ActionLink("Xóa", "deleteconfimCTHD", new { id = item.MASP })
+            </td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Quay lại", "HoaDon")
+<a href="/CaPhe/CreateCTHD"><button class="btn btn-secondary" style="margin-left:900px">Thêm chi tiết hóa đơn</button></a>
+

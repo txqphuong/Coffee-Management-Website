@@ -1,0 +1,39 @@
+﻿@model QuanLyCaPhe.Models.SANPHAM
+
+@{
+    ViewBag.Title = "XemChiTietSanPham";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<!--Bootstrap 4-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">CHI TIẾT SẢN PHẨM</h1>
+
+<div class="container" style="background-color: #DAB88B">
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            <td style="font-weight:bold">Tên sản phẩm: </td>
+            <td>@Html.DisplayFor(model => model.TENSP)</td>
+        </dd>
+
+        <dd>
+            <td style="font-weight:bold">Giá bán: </td>
+            <td>@Html.DisplayFor(model => model.GIABAN)</td>
+        </dd>
+
+        <dt style="font-weight:bold">
+            Hình ảnh
+        </dt>
+
+        <dd>
+            <img src="/Images/@Model.HINHANH" width="250px" height="250px" />
+        </dd>
+
+    </dl>
+    @*@Html.ActionLink("Quay lại", "XemChiTietHoaDon", new { id = Model.})*@
+</div>

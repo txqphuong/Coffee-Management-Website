@@ -1,0 +1,33 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.SANPHAM>
+
+@{
+    ViewBag.Title = "TimSanPham";
+    Layout = "~/Views/Shared/Client.cshtml";
+}
+
+@foreach (var i in Model)
+{
+    <!--box-->
+    <div class="product-box">
+        <div style="margin-bottom: 5px; width: 100%; height: 80%;">
+            <img src="~/Images/@i.HINHANH" alt="" class="product-img" style="object-fit:cover;">
+        </div>
+        <h2 class="product-title">
+            @i.TENSP
+        </h2>
+        <span class="price">@i.GIABAN VND</span>
+        @if (Session["user"] != null)
+        {
+            <a href=@Url.Action("ThemGioHang", "CaPhe", new { @maSP = @i.MASP ,@url = @Request.Url })>
+                <i class='bx bx-shopping-bag add-cart' style='color:#ffffff'></i>
+            </a>
+        }
+        else
+        {
+            <a href=@Url.Action("CustomerLogin","CaPhe")>
+                <i class='bx bx-shopping-bag add-cart' style='color:#ffffff'></i>
+            </a>
+        }
+
+    </div>
+}

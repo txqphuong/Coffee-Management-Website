@@ -1,0 +1,85 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFBE9">
+            <nav class="navbar-brand row" href="#"><img src="/Images/logo.jpg" width="220px" height="170px" class="rounded" style="margin-left:0px;" /></nav>
+            <nav class="navbar-brand row" href="#"><img src="/Images/Anh4.PNG" width="900px" height="170px" class="rounded" style="margin-left:10px;" /></nav>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item dropdown">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                @if(Session["user"]!=null)
+                                {
+                                    QuanLyCaPhe.Models.User info = (QuanLyCaPhe.Models.User)Session["user"];
+                                    @info.Username
+                                }
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="@Url.Action("ManagerLogin","CaPhe")"><img src="/Images/logout.png" width="30px" height="30px" />  Đăng xuất</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col col-md-2">
+                <ul class="list-group list-group-flush text-left">
+                        <li class="list-group-item" style="background-color: #CEAB93 ">
+                            <br /><a href="@Url.Action("TabTongQuan","CaPhe")"><font color="black"><img src="/Images/home.png" width="30px" height="30px" />  Tổng quan</font></a><br /><br />
+                        </li>
+                    <li class="list-group-item " style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("HoaDon","CaPhe")"><font color="black"><img src="/Images/bill.png" width="30px" height="30px" />  Hóa đơn</font></a><br /><br />
+                    </li>
+                    <li class="list-group-item" style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("ThucDon","CaPhe")"><font color="black"><img src="/Images/menu.png" width="30px" height="30px" />  Thực đơn</font></a><br /><br />
+                    </li>
+                    <li class="list-group-item" style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("ShowAllNV","CaPhe")"><font color="black"><img src="/Images/person.png" width="30px" height="30px" />  Nhân viên</font></a><br /><br />
+                    </li>
+                    <li class="list-group-item" style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("ShowAllKH","CaPhe")"><font color="black"><img src="/Images/customer.png" width="30px" height="30px" />  Khách hàng</font></a><br /><br />
+                    </li>
+                    <li class="list-group-item" style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("ShowAllKM","CaPhe")"><font color="black"><img src="/Images/discount.png" width="30px" height="30px" />  Khuyến mãi</font></a><br /><br />
+                    </li>
+                    <li class="list-group-item" style="background-color: #CEAB93">
+                        <br /><a href="@Url.Action("ShowAllNL","CaPhe")"><font color="black"><img src="/Images/material.png" width="30px" height="30px" />  Nguyên liệu</font></a><br /><br />
+                    </li>
+                    </ul>
+            </div>
+            <div class="col col-md-10">
+                <br />
+                @RenderBody()
+            </div>
+        </div>
+        <div class="row" style="background-color: #AD8B73; text-align: center; ">
+            <div class="col text-light mt-3 mb-3" style="text-align:center;">
+                Liên hệ: Grinders Food and Baverage <br />
+                © Copyrigt 2022 ĐT: 0353303503 Mail: grindersfnb@gmail.com <br />
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

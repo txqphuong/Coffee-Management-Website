@@ -1,0 +1,213 @@
+﻿@using QuanLyCaPhe.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Client</title>
+    <link rel="stylesheet" href="~/Content/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <!--Bootstrap 4-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body{
+    overflow-x: hidden;
+    } 
+    .dropbtn {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        padding-left: 8px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            background-color:white;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        /*background-color: #f1f1f1;*/
+    }
+
+    #darker-bg {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 800vh;
+        z-index: -100;
+        transition: .2s;
+        opacity: 0;
+    }
+    #btn-search{
+        background-color: transparent;
+        top: -4px;
+        right:-10px;
+    }
+</style>
+
+<body>
+    <div id="darker-bg"></div>
+        <header>
+                <!--NAVIGATION-->
+                <!-- <div class="container-fluid"> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <!--navbar-->
+                    <div class="d-flex justify-content-around align-items-center w-100">
+                        <!--Text Logo-->
+                        <div>
+                            <a href="#" class="logo text-light">Grinders Coffee</a>
+                        </div>
+                        <!--Menu-->
+                        <div>
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item nav-link">
+                                    <a href="/CaPhe/ShowSanPham" style="color:white">Trang chủ</a>
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <a href="/CaPhe/DangKy" style="color:white">Đăng Ký</a>
+                                    @*@Html.ActionLink("Đăng Ký ", "DangKy", "Paper")*@
+                                    @*<a href="/NguoiDung/DangKy">Đăng ký</a>*@
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <a href="/CaPhe/CustomerLogin" style="color:white">Đăng Nhập</a>
+                                    @*@Html.ActionLink("Đăng Nhập ", "DangNhap", "NguoiDung")*@
+                                    @*<a href="/CaPhe/CustomerLogin">Đăng nhập</a>*@
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <a href="/CaPhe/ShowkhuyenMai" style="color:white">Khuyến mãi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Control -->
+                        <div class="d-flex align-items-center">
+                            <!-- search item input -->
+                            <form action="/CaPhe/TimSanPham" method="post" class="d-inline-block">
+                                <div class="position-relative">
+                                    <input class="form-control mx-auto pr-5" type="search" placeholder="Tìm kiếm" aria-label="Search" name="txt_Search">
+                                    <button id="btn-search" class="btn btn-default position-absolute" type="submit"><img src="/Images/Tim.JPG" class="rounded" width="30px" height="30px" /></button>
+                                </div>
+                            </form>
+                            <!--cart icon-->
+                            <a href="javascript:void(0)" style="color:white; margin-left: 16px;"><i class='bx bx-cart' id="cart-icon"></i></a>
+                            <div class="nav right">
+                            <!--login icon-->
+                            @if (Session["user"] == null)
+                            {
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="background-color:transparent; color:white;"><i class='bx bx-log-in' id="cart-icon"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="@Url.Action("CustomerLogin","CaPhe")">Customer</a>
+                                        <a href="@Url.Action("ManagerLogin","CaPhe")">Manager</a>
+                                        @*<a href="@Url.Action("Logout","CaPhe")">Log out</a>*@
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="dropdown">
+                                    <button class="dropbtn" style="background-color:white"><i class='bx bx-log-in' id="cart-icon"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="@Url.Action("CustomerLogin","CaPhe")">Customer</a>
+                                        <a href="@Url.Action("ManagerLogin","CaPhe")">Manager</a>
+                                        <a href="@Url.Action("Logout","CaPhe")">Log out</a>
+                                    </div>
+                                </div>
+                            }
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+           
+
+            
+            @Html.Action("GioHangPartial2")
+            <!--cart-->
+            <div id="myCart" class="cart">
+                <h2 class="cart-title">
+                    Your cart
+                </h2>
+                <!--content-->
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="images/thaido.webp" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">
+                                Trà sữa thái đỏ
+                            </div>
+                            <div class="cart-price">25.000 VND</div>
+                            <input type="number" class="cart-quantity" value="1" />
+                        </div>
+                        <!--remove cart-->
+                        <i class='bx bx-trash cart-remove'></i>
+                    </div>
+                </div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">
+                        Total
+                    </div>
+                    <div class="total-price">
+                        0 VND
+                    </div>
+                </div>
+                <!--buy button-->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!--close cart-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+    </div>
+    </header>
+
+    <!--shop-->
+    <section class="shop container">
+        <!--content-->
+        <div class="shop-content">
+            @RenderBody()
+        </div>
+    </section>
+    <!--footer-->
+    <div class="row" style="padding-top:10px; padding-bottom:10px; text-align: center; ">
+        <div class="col text-light mt-3 mb-3" style="text-align:center;">
+            Liên hệ: Grinders Food and Baverage <br />
+            © Copyrigt 2022 ĐT: 0353303503 Mail: grindersfnb@gmail.com <br />
+        </div>
+    </div>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>

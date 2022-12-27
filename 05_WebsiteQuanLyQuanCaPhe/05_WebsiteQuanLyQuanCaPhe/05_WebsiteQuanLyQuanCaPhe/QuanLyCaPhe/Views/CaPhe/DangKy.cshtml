@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/Client.cshtml";
+}
+
+<div style="background-color: #DAB88B; border-radius:20px" >
+    <h1 style="color: white; font-weight: bold; text-align: center; font-family: 'Times New Roman'; ">ĐĂNG KÝ TÀI KHOẢN</h1>
+    <div class="form-horizontal">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            {
+                <div style="width:350px; margin:0 auto">
+                    <tr>
+                        <td style="text-align:right">Họ tên: </td>
+                        <td>@Html.TextBox("HotenKH", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi1"]</span></td>
+                    </tr><br />
+
+                    <tr>
+                        <td style="text-align:right">Tên đăng nhập: </td>
+                        <td>@Html.TextBox("TenTK", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi2"]</span></td>
+                    </tr><br />
+
+                    <tr>
+                        <td style="text-align:right">Mật khẩu: </td>
+                        <td>@Html.TextBox("MatKhau", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi3"]</span></td>
+                    </tr><br />
+
+                    <tr>
+                        <td style="text-align:right">Điện thoại: </td>
+                        <td>@Html.TextBox("DienThoai", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi4"]</span></td>
+                    </tr><br />
+
+
+                    <tr>
+                        <td style="text-align:right">Email: </td>
+                        <td>@Html.TextBox("DiaChi", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi5"]</span></td>
+                    </tr><br />
+
+                    <tr>
+                        <td style="text-align:right">Địa chỉ: </td>
+                        <td>@Html.TextBox("Email", "", new { @class = "form-control" }) <span style="color:red">@ViewData["Loi6"]</span></td>
+                    </tr><br />
+                    <br />
+                    <center><td><input type="submit" value="Đăng ký" class="btn btn-info" /></td></center>
+                    <br />
+                </div>
+
+            }
+        }
+    </div>
+</div>
+    
+
+

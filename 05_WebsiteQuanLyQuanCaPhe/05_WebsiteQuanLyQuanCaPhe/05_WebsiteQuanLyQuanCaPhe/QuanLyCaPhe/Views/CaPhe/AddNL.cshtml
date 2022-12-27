@@ -1,0 +1,94 @@
+﻿@model QuanLyCaPhe.Models.NGUYENLIEU
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddNL</title>
+</head>
+<body>
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+            <h1 style="color: white; font-weight: bold; font-family: 'Times New Roman'; text-align: center">THÊM NGUYÊN LIỆU</h1>
+            <div>
+                <hr />
+                <div style="margin-left:20px;">
+                    @Html.ValidationSummary(true)
+
+                    @*<div class="form-group">
+                            @Html.LabelFor(model => model.MaNL, new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.MaNL)
+                                @Html.ValidationMessageFor(model => model.MaNL)
+                            </div>
+                        </div>*@
+
+                    <div class="form-group">
+                        <h3 style="font-family:'Times New Roman'">Tên nguyên liệu</h3>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.TenNL)
+                            @Html.ValidationMessageFor(model => model.TenNL)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 style="font-family:'Times New Roman'">Số lượng còn</h3>
+
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SoLuongCon)
+                            @Html.ValidationMessageFor(model => model.SoLuongCon)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 style="font-family:'Times New Roman'">Đơn vị tính</h3>
+
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DVT)
+                            @Html.ValidationMessageFor(model => model.DVT)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 style="font-family:'Times New Roman'">Đơn giá</h3>
+
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DonGia)
+                            @Html.ValidationMessageFor(model => model.DonGia)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 style="font-family:'Times New Roman'">Hạn sử dụng</h3>
+
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.HanSD)
+                            @Html.ValidationMessageFor(model => model.HanSD)
+                        </div>
+                    </div>
+                    <center>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Thêm nguyên liệu" class="btn btn-info" />
+                                @Html.ActionLink("Quay lại", "ShowAllNL")
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    }
+</body>
+</html>

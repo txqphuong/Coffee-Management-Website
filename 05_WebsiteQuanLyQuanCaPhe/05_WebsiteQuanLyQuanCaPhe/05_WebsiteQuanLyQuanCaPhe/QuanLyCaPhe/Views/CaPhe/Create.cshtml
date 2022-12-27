@@ -1,0 +1,91 @@
+﻿@model  QuanLyCaPhe.Models.HOADON
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+                <h1 style="color: white; font-weight: bold; font-family: 'Times New Roman'; text-align: center">TẠO HÓA ĐƠN</h1>
+                <div>
+                    <hr />
+                    <div style="margin-left:20px;">
+                        @Html.ValidationSummary(true)
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tên khách hàng</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.KHACHHANG.TENNKH)
+                                @Html.ValidationMessageFor(model => model.KHACHHANG.TENNKH)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tên nhân viên</h3>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.NHANVIEN.TENNV, new List<SelectListItem> { new SelectListItem { Text = "Đỗ Huệ Mẫn", Value = "2", Selected = true },
+                                new SelectListItem { Text = "Trần Đức Huy", Value = "3" } ,new SelectListItem { Text = "Nguyễn Hoàng Ân", Value = "4" },
+                                new SelectListItem { Text = "Nguyễn Xuân Quỳnh", Value = "5" } ,new SelectListItem { Text = "Nguyễn Nhật Nam", Value = "6" },
+                                new SelectListItem { Text = "Nguyễn Xuân Quỳnh", Value = "7" } ,new SelectListItem { Text = "Nguyễn Văn An", Value = "8" },
+                                new SelectListItem { Text = "Lê Quốc Bình", Value = "9" } ,new SelectListItem { Text = "Nguyễn Thanh Nhã", Value = "10" },
+                                new SelectListItem { Text = "Nguyễn Thị Nguyệt", Value = "11" } ,new SelectListItem { Text = "Trần Văn Sang", Value = "12" }})
+                                @Html.ValidationMessageFor(model => model.NHANVIEN.TENNV)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Ngày bán</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NGAYBAN)
+                                @Html.ValidationMessageFor(model => model.NGAYBAN)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Tổng tiền</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TONGTIEN)
+                                @Html.ValidationMessageFor(model => model.TONGTIEN)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3 style="font-family:'Times New Roman'">Số bàn</h3>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.SOBAN)
+                                @Html.ValidationMessageFor(model => model.SOBAN)
+                            </div>
+                        </div><br />
+
+
+                        <center>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Thêm hóa đơn" class="btn btn-info" />
+                                    @Html.ActionLink("Quay lại", "HoaDon")
+                                </div><br />
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</body>
+</html>

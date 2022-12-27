@@ -1,0 +1,77 @@
+﻿@model IEnumerable<QuanLyCaPhe.Models.KHUYENMAI>
+
+@{
+    ViewBag.Title = "ShowAllKM";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string thongbao = Session["TB"] as string;
+}
+
+<h1 style="color:brown; font-family:'Times New Roman'; font-weight:bold;">DANH SÁCH CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Mã khuyến mãi
+        </th>
+        <th>
+            Tên sự kiện
+        </th>
+        <th>
+            Nội dung
+        </th>
+        <th>
+            Tặng sản phẩm
+        </th>
+        <th>
+            Ngày bắt đầu
+        </th>
+        <th>
+            Ngày kết thúc
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TiLeKM)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaKM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSuKien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoiDung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TangSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayBD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayKT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TiLeKM)
+        </td>
+        <td>
+            @Html.ActionLink("Cập nhật", "EditKM", new { ID = item.MaKM }) |
+            @Html.ActionLink("Xóa", "DeleteKM", new { Makm = item.MaKM })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    <a href="/CaPhe/AddKM"><button class="btn btn-secondary" style="margin-left:900px">Thêm khuyến mãi</button></a>
+</p>
+@if (thongbao != null && thongbao != string.Empty)
+{
+    <script type="text/javascript">
+        window.alert("@thongbao")
+    </script>
+}

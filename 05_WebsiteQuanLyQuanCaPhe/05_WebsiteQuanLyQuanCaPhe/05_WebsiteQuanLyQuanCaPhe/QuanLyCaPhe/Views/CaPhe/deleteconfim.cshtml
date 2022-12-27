@@ -1,0 +1,61 @@
+﻿@model QuanLyCaPhe.Models.SANPHAM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>deleteconfim</title>
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+</head>
+<body>
+    <dl class="dl-horizontal">
+        <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px; ">
+            <h1 style="color: white; font-weight: bold; text-align: center; font-family: 'Times New Roman'">BẠN CÓ MUỐN XÓA SẢN PHẨM NÀY KHÔNG?</h1>
+            <div>
+                <hr />
+                <div style="margin-left:20px;">
+                    <h3 style="font-family:'Times New Roman'">Mã sản phẩm:  <span style="font-weight: normal; font-family: 'Times New Roman'">@Html.DisplayFor(model => model.MASP)</span></h3>
+
+
+                    <h3 style="font-family:'Times New Roman'">Mã loại:  <span style="font-weight: normal; font-family: 'Times New Roman'">@Html.DisplayFor(model => model.MALOAI)</span></h3>
+
+
+                    <h3 style="font-family:'Times New Roman'">Tên sản phẩm:  <span style="font-weight: normal; font-family: 'Times New Roman'">@Html.DisplayFor(model => model.TENSP)</span></h3>
+
+
+                    <h3 style="font-family:'Times New Roman'">Giá bán:  <span style="font-weight: normal; font-family: 'Times New Roman'">@Html.DisplayFor(model => model.GIABAN)</span></h3>
+
+
+                    <h3 style="font-family:'Times New Roman'">Hình ảnh</h3>
+                    <td>
+                        <img src="/Images/@Model.HINHANH" width="200px" height="200px" />
+                    </td><br />
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <center>
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Xóa sản phẩm" class="btn btn-info" /> |
+                                @Html.ActionLink("Quay lại", "ThucDon")
+                            </div>
+                        </center><br />
+                    }
+                </div>
+            </div>
+    </dl>
+
+
+    </div>
+</body>
+</html>

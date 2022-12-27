@@ -1,0 +1,112 @@
+﻿@model QuanLyCaPhe.Models.KHACHHANG
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditKH</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+                <h1 style="color: white; font-weight: bold; font-family: 'Times New Roman'; text-align: center">CẬP NHẬT KHÁCH HÀNG</h1>
+                <div>
+                    <hr />
+                    <div style="margin-left:20px;">
+            @Html.ValidationSummary(true)
+            <div class="form-group">
+                @Html.LabelFor(model => model.MAKH, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MAKH)
+                    @Html.ValidationMessageFor(model => model.MAKH)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.TENNKH, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TENNKH)
+                    @Html.ValidationMessageFor(model => model.TENNKH)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.PHAI, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PHAI)
+                    @Html.ValidationMessageFor(model => model.PHAI)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.SDTKH, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.SDTKH)
+                    @Html.ValidationMessageFor(model => model.SDTKH)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.TENTAIKHOAN, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TENTAIKHOAN)
+                    @Html.ValidationMessageFor(model => model.TENTAIKHOAN)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.MATKHAUTK, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MATKHAUTK)
+                    @Html.ValidationMessageFor(model => model.MATKHAUTK)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.DIACHIKH, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DIACHIKH)
+                    @Html.ValidationMessageFor(model => model.DIACHIKH)
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.EMAIL, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EMAIL)
+                    @Html.ValidationMessageFor(model => model.EMAIL)
+                </div>
+            </div>
+                        <center>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Save" class="btn btn-default" />
+                                    @Html.ActionLink("Back to List", "Index")
+                                </div>
+                            </div>
+                        </center>
+        </div>
+                    </div>
+                </div>
+            </div>
+    }
+    
+    <div>
+       
+    </div>
+</body>
+</html>

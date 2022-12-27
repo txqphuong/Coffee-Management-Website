@@ -1,0 +1,108 @@
+﻿@model QuanLyCaPhe.Models.KHUYENMAI
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <title>Cập nhật</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <div class="form-horizontal">
+                <div style="background-color: #DAB88B; margin: 0 auto; width: 1000px; border-radius: 30px;">
+                    <h1 style="color: white; font-weight: bold; text-align: center; font-family: 'Times New Roman'; ">CẬP NHẬT CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+                    <div>
+                        <hr />
+                        @Html.ValidationSummary(true)
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Mã khuyến mãi</h4>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.MaKM)
+                                @*<input value="@Model.MaKM" readonly="readonly" />*@
+                                @Html.ValidationMessageFor(model => model.MaKM)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Tên sự kiện</h4>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TenSuKien)
+                                @Html.ValidationMessageFor(model => model.TenSuKien)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Nội dung</h4>
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NoiDung)
+                                @Html.ValidationMessageFor(model => model.NoiDung)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Tặng sản phẩm</h4>
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TangSP)
+                                @Html.ValidationMessageFor(model => model.TangSP)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Ngày bắt đầu</h4>
+
+                            <div class="col-md-10">
+                                <input type="date" id="NGAYBD" name="NGAYBD">
+                                @Html.ValidationMessageFor(model => model.NgayBD)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Ngày kết thúc</h4>
+
+                            <div class="col-md-10">
+                                <input type="date" id="NGAYKT" name="NGAYKT">
+                                @Html.ValidationMessageFor(model => model.NgayKT)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4 style="font-family:'Times New Roman'">Tỉ lệ khuyến mãi</h4>
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TiLeKM)
+                                @Html.ValidationMessageFor(model => model.TiLeKM)
+                            </div>
+                        </div>
+
+                        <center>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Save" class="btn btn-default" />
+                                    @Html.ActionLink("Quay lại", "ShowAllKM")
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
